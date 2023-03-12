@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  color: var(--default-text-color);
+  background: var(--main-background);
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 50%;
+}
+
+.name-danger,
+.comment-danger {
+  opacity: 0;
+}
+
+.danger_active {
+  animation: wrong 0.3s;
+  opacity: 1;
+}
+
+@keyframes wrong {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.comment {
+  display: flex;
+}
+.comment__name {
+  margin-right: 5px;
+}
+.comment .btn {
+  margin-left: auto;
+}
+
+.like-img {
+  max-width: 38px;
+}/*# sourceMappingURL=index.css.map */
