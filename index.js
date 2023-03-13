@@ -21,9 +21,7 @@ form.addEventListener("keydown", (e) => {
 });
 
 function submit(e) {
-  e.preventDefault();
-
-  console.log(data);
+  e.preventDefault(); 
   let dateComment = date.value;
 
   name.addEventListener("input", () => {
